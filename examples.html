@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Školení GIT - Examples</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css"/>
+
+    <style>
+        .item {
+            display: none;
+        }
+
+        .item.active {
+            display: block;
+        }
+
+        .item .hero-unit {
+            max-height: 400px;
+        }
+
+        .span3 {
+            width: 240px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .storage {
+            height: 300px;
+            padding-top: 2px;
+            margin-bottom: 8px;
+        }
+
+        .workspace {
+            background: #41C47E;
+        }
+
+        .stage {
+            background: #438EB6;
+        }
+
+        .local {
+            background: #FFB155;
+        }
+
+        .remote {
+            background: #FF7B55;
+        }
+
+        .arrows {
+            position: relative;
+            bottom: 300px;
+        }
+
+        .arrow {
+            background: #000;
+            height: 20px;
+
+            width: 810px;
+
+            margin-bottom: 40px;
+        }
+
+        .first {
+            margin-left: 120px;
+        }
+
+        .second {
+            margin-left: 390px;
+        }
+
+        .third {
+            margin-left: 660px;
+        }
+
+        .short {
+            width: 270px;
+        }
+
+        .medium {
+            width: 540px;
+        }
+
+        .arrow .left {
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+
+            border-right: 30px solid black;
+
+            position: relative;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .arrow .right {
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+
+            border-left: 30px solid black;
+
+            position: relative;
+            bottom: 20px;
+        }
+
+        .arrow .right {
+            left: 810px;
+        }
+
+        .medium .right {
+            left: 540px;
+        }
+
+        .short .right {
+            left: 270px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding: 50px;">
+        <div id="examples">
+            <div id="init" class="active item">
+                <div class="hero-unit">
+                    <h2>git init</h2>
+
+                    <div class="row">
+                        <div class="span3">
+                            <div class="storage workspace"></div>
+
+                            Workspace
+                        </div>
+                        <div class="span3">
+                            <div class="storage stage"></div>
+
+                            Stage
+                        </div>
+                        <div class="span3">
+                            <div class="storage local"></div>
+
+                            Local
+                        </div>
+                        <div class="span3">
+                            <div class="storage remote"></div>
+
+                            Remote
+                        </div>
+
+                    </div>
+
+                    <div class="arrows">
+                        <div class="arrow first">
+                            <div class="line"></div>
+                            <div class="left"></div>
+                        </div>
+
+                        <div class="arrow first">
+                            <div class="right"></div>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="arrow medium first">
+                            <div class="line"></div>
+                            <div class="left"></div>
+                        </div>
+
+                        <div class="arrow medium first">
+                            <div class="right"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="add" class="item">
+                <div class="hero-unit">
+                    <h2>git add</h2>
+
+                    <div class="row">
+                        <div class="span3">
+                            <div class="storage workspace"></div>
+
+                            Workspace
+                        </div>
+                        <div class="span3">
+                            <div class="storage stage"></div>
+
+                            Stage
+                        </div>
+                        <div class="span3">
+                            <div class="storage local"></div>
+
+                            Local
+                        </div>
+                        <div class="span3">
+                            <div class="storage remote"></div>
+
+                            Remote
+                        </div>
+                    </div>
+
+                    <div class="arrows">
+                        <div class="arrow second medium">
+                            <div class="line"></div>
+                            <div class="left"></div>
+                        </div>
+
+                        <div class="arrow second medium">
+                            <div class="right"></div>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="arrow short second">
+                            <div class="line"></div>
+                            <div class="left"></div>
+                        </div>
+
+                        <div class="arrow short second">
+                            <div class="right"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="commit" class="item">
+                <div class="hero-unit">
+                    <h2>git commit</h2>
+
+                    <div class="row">
+                        <div class="span3">
+                            <div class="storage workspace"></div>
+
+                            Workspace
+                        </div>
+                        <div class="span3">
+                            <div class="storage stage"></div>
+
+                            Stage
+                        </div>
+                        <div class="span3">
+                            <div class="storage local"></div>
+
+                            Local
+                        </div>
+                        <div class="span3">
+                            <div class="storage remote"></div>
+
+                            Remote
+                        </div>
+                    </div>
+
+                    <div class="arrows">
+                        <div class="arrow third short">
+                            <div class="line"></div>
+                            <div class="left"></div>
+                        </div>
+
+                        <div class="arrow third short">
+                            <div class="right"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="log" class="item">
+                <div class="hero-unit">
+                    <h2>git log</h2>
+
+                    <div class="row">
+                        <div class="span3">
+                            <div class="storage workspace"></div>
+
+                            Workspace
+                        </div>
+                        <div class="span3">
+                            <div class="storage stage"></div>
+
+                            Stage
+                        </div>
+                        <div class="span3">
+                            <div class="storage local"></div>
+
+                            Local
+                        </div>
+                        <div class="span3">
+                            <div class="storage remote"></div>
+
+                            Remote
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
