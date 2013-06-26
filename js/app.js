@@ -18,11 +18,19 @@
                 $('#engine-starter').show();
 
                 $('#control-panel').addClass('hidden');
+
+                $('#hide-all').addClass('hidden');
             };
 
             $('#control-panel').removeClass('hidden');
 
+            $('#hide-all').removeClass('hidden');
+
             $(this).hide();
+        });
+
+        $('#hide-all').click(function () {
+            $controls.filter('.active').click();
         });
 
         $('#pop-up-control-init').click(function () {
